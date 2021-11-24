@@ -13,17 +13,46 @@
 </head>
 <body>
 
-
-
+@include("header")
+<section>
 @yield("content")
+</section>
 
-{{ View::make("footer")}}
+
+@include("footer")
    
 </body>
 <style>
     .custom-login{
         height: 500px;
         padding-top:100px
+    }
+    img.img-slider{
+        height:500px !important
+    }
+    .custom-product{
+        height : 600px;
+        padding-top:40px
+
+    }
+    .trending-img{
+        height:100px;
+    }
+    .trending-item{
+        float:left;
+        width:20%
+    }
+    .tending-wrapper{
+        margin:30px
+    }
+    .detail-img
+    {
+        margin-top:50px;
+        height:300px;
+
+    }
+    .margin{
+        margin-top:10px;
     }
 </style>
 
